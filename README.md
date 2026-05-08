@@ -18,16 +18,20 @@ App cho phép tạo ghi chú với tiêu đề và nội dung, lưu trữ bằng
 
 ## Ảnh chụp màn hình
 
-(chụp ảnh từ điện thoại hoặc emulator rồi bỏ vào đây)
 
 - Màn hình chính
-  <img src="link_anh_1.png" />
+
+<img width="488" height="1021" alt="{D3F745D2-D6B0-4D5D-AB5D-49AF8E569BBF}" src="https://github.com/user-attachments/assets/7a9f046e-b8d0-4541-a4d4-a9eec323eec9" />
+
 
 - Màn hình tạo ghi chú
-  <img src="link_anh_2.png" />
+
+<img width="498" height="1025" alt="{5DDF1EFF-991C-4FB2-A655-4E400F4788BE}" src="https://github.com/user-attachments/assets/07307ffb-1b88-446f-a228-72e51ca4cb28" />
+
 
 - Xác nhận xóa
-  <img src="link_anh_3.png" />
+<img width="511" height="1015" alt="{21C569F6-9F23-449C-B215-FB75AA6D48E6}" src="https://github.com/user-attachments/assets/6eba78eb-6e43-4f1d-a00b-026dbd66a98b" />
+
 
 ## Cách chạy dự án
 
