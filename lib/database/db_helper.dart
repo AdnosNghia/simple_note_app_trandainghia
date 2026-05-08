@@ -35,20 +35,17 @@ class DatabaseHelper {
     );
   }
 
-  // Create
   Future<int> create(Note note) async {
     final db = await database;
     return await db.insert('notes', note.toMap());
   }
 
-  // Read All
   Future<List<Note>> readAll() async {
     final db = await database;
     final maps = await db.query('notes', orderBy: 'updatedAt DESC');
     return maps.map((m) => Note.fromMap(m)).toList();
   }
 
-  // Update
   Future<int> update(Note note) async {
     final db = await database;
     return await db.update(
@@ -59,7 +56,6 @@ class DatabaseHelper {
     );
   }
 
-  // Delete
   Future<int> delete(int id) async {
     final db = await database;
     return await db.delete('notes', where: 'id = ?', whereArgs: [id]);

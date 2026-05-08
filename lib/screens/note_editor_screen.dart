@@ -90,7 +90,10 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
               controller: _titleController,
               decoration: const InputDecoration(
                 labelText: 'Title',
-                border: OutlineInputBorder(),
+                hintText: 'Enter note title',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(12)),
+                ),
               ),
             ),
             const SizedBox(height: 16),
@@ -99,7 +102,10 @@ class _NoteEditorScreenState extends State<NoteEditorScreen> {
                 controller: _contentController,
                 decoration: const InputDecoration(
                   labelText: 'Content',
-                  border: OutlineInputBorder(),
+                  hintText: 'Enter your note content here',
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(12)),
+                  ),
                   alignLabelWithHint: true,
                 ),
                 maxLines: null,

@@ -18,13 +18,29 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('My Notes'),
+        centerTitle: true,
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Consumer<NoteProvider>(
         builder: (context, provider, child) {
           if (provider.notes.isEmpty) {
-            return const Center(
-              child: Text('No notes yet. Tap + to add one!'),
+            return Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.note_add, size: 64, color: Colors.grey.shade400),
+                  const SizedBox(height: 16),
+                  Text(
+                    'No notes yet',
+                    style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.grey.shade600),
+                  ),
+                  const SizedBox(height: 8),
+                  Text(
+                    'Tap + to add one!',
+                    style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.grey.shade500),
+                  ),
+                ],
+              ),
             );
           }
           return ListView.builder(
